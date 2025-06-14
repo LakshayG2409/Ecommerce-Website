@@ -1,0 +1,35 @@
+.item {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .item-image {
+    width: 100%;  /* Make sure image takes full container width */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover;  /* Ensures the image covers the container while preserving its aspect ratio */
+    border-radius: 10px;  /* Optional: rounds the corners of the images */
+  }
+  
+  .item-prices {
+    margin-top: 15px;
+  }
+  
+  .item-price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e60000; /* You can change this color to match your theme */
+  }
+  
+  .item-price-old {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #888;
+    margin-top: 5px;
+  }
+  

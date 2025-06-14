@@ -1,0 +1,42 @@
+.new-collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.new-collection h1 {
+    color: #171717;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+}
+
+.new-collection hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ensures equal size products */
+    margin-top: 50px;
+    gap: 30px;
+    width: 80%; /* Adjust the container width to ensure proper spacing */
+}
+
+@media (max-width: 768px) {
+    .collections {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .collections {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Further adjustment for mobile */
+    }
+}

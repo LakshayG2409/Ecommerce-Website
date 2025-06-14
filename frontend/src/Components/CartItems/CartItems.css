@@ -1,0 +1,134 @@
+/* General Styles */
+.cartitems {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.classitems-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.carticon-product-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.cartitems-remove-icon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.cartitems-remove-icon:hover {
+  opacity: 1;
+}
+
+/* Cart Totals Section */
+.cartitems-total {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.cartitems-total h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.cartitems-total-item h3 {
+  color: #444;
+}
+
+.cartitems-total button {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cartitems-total button:hover {
+  background-color: #0056b3;
+}
+
+/* Address Input Section */
+.cartitems-address {
+  margin-top: 20px;
+}
+
+.cartitems-address label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cartitems-address textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  font-size: 0.9rem;
+}
+
+.cartitems-address textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cartitems-format-main,
+  .classitems-format {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cartitems-total {
+    padding: 15px;
+  }
+
+  .carticon-product-icon {
+    width: 50px;
+    height: 50px;
+  }
+}

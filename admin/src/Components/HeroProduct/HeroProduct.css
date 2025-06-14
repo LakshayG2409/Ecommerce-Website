@@ -1,0 +1,46 @@
+.hero-product-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .hero-product-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .hero-product-image {
+    width: 300px;
+    height: auto;
+    margin-right: 30px;
+  }
+  
+  .hero-product-info {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .hero-product-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-product-info p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .hero-product-info button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-product-info button:hover {
+    background-color: #0056b3;
+  }
+  
